@@ -40,7 +40,7 @@ class Bot < Player
 
   def test_player_moves
     score = 0
-    player = Player.new('player', 'X'.bold.blue)
+    player = Player.new('player', 'X')
     pm = possible_moves?
     pm.each do |move|
       bot_b.make_move?(move[0], player)

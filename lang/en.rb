@@ -1,5 +1,3 @@
-require_relative '../lib/colorize.rb'
-
 def instructions
   system('clear')
   puts "You will have a 3x3 board and player 1 will have the first turn\n"
@@ -70,11 +68,11 @@ def bot_think
 end
 
 def congrats(winner)
-  "\nCongratulations #{winner}, you won!".bold.green
+  "\nCongratulations #{winner}, you won!"
 end
 
 def draw_it_is
-  "\nIt's a draw, nobody won!".bold.cyan
+  "\nIt's a draw, nobody won!"
 end
 
 def thanks
@@ -85,7 +83,7 @@ def thanks
 end
 
 def you_lost(player)
-  "Sorry #{player.name}, you lost!".bold.red
+  "Sorry #{player.name}, you lost!"
 end
 
 def restart?
@@ -95,29 +93,29 @@ end
 # Error messages ----------------------------------------------
 
 def yes_or_no
-  'Please respond with yes or no.'.bold.yellow
+  'Please respond with yes or no.'
 end
 
 def invalid_error
-  'Please enter a number between 1 and 9.'.bold.red
+  'Please enter a number between 1 and 9.'
 end
 
 def place_taken
-  'Please choose another spot, this one is already taken.'.bold.yellow
+  'Please choose another spot, this one is already taken.'
 end
 
 def empty_name
-  'Please enter at least one charachter as a name'.bold.yellow
+  'Please enter at least one charachter as a name'
 end
 
 def same_name
-  "Please don't use the same name as player 1".bold.cyan
+  "Please don't use the same name as player 1"
 end
 
 def wrong_level
-  'Please choose a number between 1 and 3'.bold.red
+  'Please choose a number between 1 and 3'
 end
 
 def same_as_bot
-  "Sorry, this is the Bot's name, please choose another name".bold.yellow
+  "Sorry, this is the Bot's name, please choose another name"
 end

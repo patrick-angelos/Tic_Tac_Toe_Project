@@ -48,23 +48,4 @@ class Board
     end
     false
   end
-
-  def animate(str)
-    str.to_s
-    str.split('').each do |i|
-      print i
-      sleep(0.03)
-    end
-  end
-
-  def build
-    3.times do
-      animate '    -------------'
-      print "\n"
-      animate '    |   |   |   |'
-      print "\n"
-    end
-    animate '    -------------'
-    print "\n"
-  end
 end
